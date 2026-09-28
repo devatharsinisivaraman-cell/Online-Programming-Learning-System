@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Basics - CodeLearn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Code<span>Learn</span></div>
+
+```
+<nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="course.html">Courses</a>
+    <a href="support.html">Support</a>
+</nav>
+```
+
+</header>
+
+<section class="lesson-page">
+
+```
+<div class="lesson-header">
+
+    <span>MODULE 1</span>
+
+    <h1>Programming Basics</h1>
+
+    <p>
+        Understand variables, data types and the basic structure
+        of a C program.
+    </p>
+
+</div>
+
+<article class="lesson-content">
+
+    <h2>What is Programming?</h2>
+
+    <p>
+        Programming is the process of writing instructions that
+        a computer can execute to perform a particular task.
+    </p>
+
+    <h2>What is a Variable?</h2>
+
+    <p>
+        A variable is a named memory location used to store data.
+        The value stored in a variable can change during program
+        execution.
+    </p>
+
+    <div class="code-box">
+```
+
+<pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int age = 20;
+
+    printf("%d", age);
+
+    return 0;
+}
+</pre>
+
+```
+    </div>
+
+    <h2>Data Types</h2>
+
+    <table class="data-table">
+
+        <tr>
+            <th>Data Type</th>
+            <th>Purpose</th>
+            <th>Example</th>
+        </tr>
+
+        <tr>
+            <td>int</td>
+            <td>Integer values</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td>float</td>
+            <td>Decimal values</td>
+            <td>10.5</td>
+        </tr>
+
+        <tr>
+            <td>char</td>
+            <td>Single character</td>
+            <td>'A'</td>
+        </tr>
+
+    </table>
+
+    <div class="activity-box">
+
+        <span class="small-label">INTERACTIVE ACTIVITY</span>
+
+        <h2>Predict the Output</h2>
+
+        <div class="code-box">
+```
+
+<pre>
+int a = 10;
+int b = 20;
+
+printf("%d", a + b);
+</pre>
+
+```
+        </div>
+
+        <div class="options">
+
+            <button onclick="checkAnswer(this, false)">10</button>
+
+            <button onclick="checkAnswer(this, false)">20</button>
+
+            <button onclick="checkAnswer(this, true)">30</button>
+
+            <button onclick="checkAnswer(this, false)">1020</button>
+
+        </div>
+
+        <p id="feedback"></p>
+
+    </div>
+
+    <div class="lesson-navigation">
+
+        <a href="course.html" class="secondary-btn">
+            ← Back to Course
+        </a>
+
+        <a href="quiz.html" class="primary-btn">
+            Take Quiz →
+        </a>
+
+    </div>
+
+</article>
+```
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
